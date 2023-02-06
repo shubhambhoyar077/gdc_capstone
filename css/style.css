@@ -1,0 +1,67 @@
+* {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+:root {
+    --common-padding: 0 7%;
+    --black-color: #272A31;
+    --orange-color: #EC5242;
+    --gray-color: #f6f6f6;
+  }
+.container{
+    margin: var(--common-padding) 0;
+}
+
+/*----------hero section----------- */
+.hero_section{
+    background-image: url("../img/mobile_bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.hero_section .gdc-greeting{
+    color: var(--orange-color);
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.hero_section .gdc{
+    color: var(--orange-color);
+    font-size: 60px;
+    font-weight: 900;
+    background-clip: text;
+    background-image: url("../img/headerbg.jpeg");
+    background-image: center left;
+    color: transparent;
+}
+
+.hero_section .gdc-msg{
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    border: 3px solid white;
+    background-color: var(--gray-color);
+    padding: 4%;
+    margin: 2% 0;
+    color: var(--black-color);
+}
+
+.hero_section .gdc-date{
+    font-size: 25px;
+    font-weight: 700;
+    margin: 3% 0;
+    color: black;
+}
+
+.hero_section .gdc-location{
+    font-size: 20px;
+    font-weight: 300;
+    color: var(--black-color);
+}
