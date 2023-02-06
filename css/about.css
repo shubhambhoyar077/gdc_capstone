@@ -1,0 +1,23 @@
+@import "style.css";
+
+
+/* -----hero section---- */
+.hero_section{
+    height: 100vh;
+}
+.hero_section .container{
+    text-align: center;
+}
+
+.hero_section .gdc-email{
+    border-bottom: 1px solid var(--black-color);
+}
+
+.hero_section .gdc-contact{
+    margin: 5% 0;
+}
+
+.hero_section .gdc-msg{
+    border: 3px solid var(--gray-color);
+    background-color: white;
+}

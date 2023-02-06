@@ -145,17 +145,23 @@ a{
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    justify-content: space-between;
 }
 .main_program .program_card:hover{
     border: 1px solid white;
 }
 .main_program .program_card img{
-    width: 68px;
-    height: 58px;
+    width: 9.9%;
+    height: auto;
+    text-align: right;
 }
 .main_program .program_title{
     color: var(--orange-color);
     margin: 0 4%;
+    
+}
+.main_program .program_info{
+    width: 60%;
 }
 
 .main_program .register_btn{
