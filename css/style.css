@@ -65,3 +65,50 @@
     font-weight: 300;
     color: var(--black-color);
 }
+
+/* -------Main Program---------- */
+.main_program{
+    color: white;
+    background-color: var(--black-color);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url("../img/diamond.png");
+}
+.main_program .main_program_title{
+    text-align: center;
+}
+
+.main_program .container{
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 5%;
+}
+.main_program .program_card{
+    display: flex;
+    background-color: rgba(55, 58, 67, 0.5);
+    padding: 2%;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.main_program .program_card:hover{
+    border: 1px solid white;
+}
+.main_program .program_card img{
+    width: 68px;
+    height: 58px;
+}
+.main_program .program_title{
+    color: var(--orange-color);
+    margin: 0 4%;
+}
+
+.main_program .register_btn{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    background-color: var(--orange-color);
+    padding: 8% 0;
+    margin: 0 7%;
+}
