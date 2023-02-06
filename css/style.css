@@ -16,7 +16,7 @@
 .custome_border{
     color: var(--orange-color);
     width: 30px;
-    align-self: center;
+    /* align-self: center; */
     margin: 5px 0 24px 0;
 }
 /*----------hero section----------- */
@@ -79,10 +79,11 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
+    align-items: center;
     background-image: url("../img/diamond.png");
 }
 .main_program .main_program_title{
-    text-align: center;
+    /* text-align: center; */
     margin-top: 24px;
 }
 
@@ -118,4 +119,24 @@
     background-color: var(--orange-color);
     padding: 8% 0;
     margin: 0 7%;
+}
+/* -------speakers-------- */
+
+/* -------Partners-------- */
+.partner{
+    background-color: var(--black-color);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 0;
+}
+.partner .container{
+    text-align: center;
+}
+.partner .partner_logo{
+    width: 40%;
+    margin: 0 2%;
+    filter: invert(70%) saturate(4%);
 }
