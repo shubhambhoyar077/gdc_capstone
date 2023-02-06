@@ -167,6 +167,8 @@
     margin: 0 7% 0 calc(7% + 15px);
     display: grid;
     grid-template-columns: auto;
+    row-gap: 24px;
+    padding: 5% 0;
 }
 .featured_speakers .speaker{
     display: flex;
