@@ -16,8 +16,48 @@
 .custome_border{
     color: var(--orange-color);
     width: 30px;
-    /* align-self: center; */
     margin: 5px 0 24px 0;
+}
+.disable{
+    display: none;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+/* -------Mobile Menu-------------- */
+.menu .mobile-menu{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--black-color);
+}
+.menu .mobile-menu .close-menu{
+    color: white;
+    font-size: 30px;
+    margin: 7%;
+}
+.menu .mobile-menu .close-menu:hover{
+    color: var(--orange-color);
+}
+.menu .toggle-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15%;
+}
+.menu .mobile-menu .page-link{
+    color: white;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 60px;
+}
+.menu .mobile-menu .page-link:hover{
+    color: var(--orange-color);
 }
 /*----------hero section----------- */
 .hero_section{

@@ -51,3 +51,14 @@ for(let speaker in speakers){
                 </div>
                 </div>`
     }
+
+const openmenubtn = document.querySelector("#toggle-mobile-menu");
+const closemenubtn = document.querySelector("#close-menu");
+const mobilemenu = document.querySelector('.mobile-menu');
+
+openmenubtn.addEventListener('click', () => {
+    mobilemenu.classList.toggle("disable")
+});
+closemenubtn.addEventListener('click', () => {
+    mobilemenu.classList.toggle("disable");
+});
