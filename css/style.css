@@ -13,6 +13,12 @@
     margin: var(--common-padding) 0;
 }
 
+.custome_border{
+    color: var(--orange-color);
+    width: 30px;
+    align-self: center;
+    margin: 5px 0 24px 0;
+}
 /*----------hero section----------- */
 .hero_section{
     background-image: url("../img/mobile_bg.png");
@@ -77,6 +83,7 @@
 }
 .main_program .main_program_title{
     text-align: center;
+    margin-top: 24px;
 }
 
 .main_program .container{
