@@ -157,3 +157,42 @@
 .footer_info .copyright{
     flex: 1;
 }
+/* -------Speakers------- */
+.featured_speakers{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.featured_speakers .container{
+    margin: 0 7% 0 calc(7% + 15px);
+    display: grid;
+    grid-template-columns: auto;
+}
+.featured_speakers .speaker{
+    display: flex;
+    margin-bottom: 5%;
+    position: relative;
+}
+.featured_speakers .speaker::before{
+    content: '';
+    background-image: url("../img/speaker_bg.jpg");
+    background-size: contain;
+    z-index: -1;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    top: -15px;
+    left: -15px;
+
+}
+.featured_speakers .speaker_img{
+    width: 120px;
+    height: auto;
+    margin-right: 2%;
+}
+.featured_speakers .speaker_title{
+    color: var(--orange-color);
+}
+.featured_speakers .speaker_info .custome_border{
+    color: var(--gray-color);
+}
