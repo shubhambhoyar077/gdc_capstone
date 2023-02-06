@@ -25,11 +25,17 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 5% 0;
     
+}
+.hero_section .toggle-mobile-menu{
+    color: var(--black-color);
+    font-size: 30px;
+    margin: var(--common-padding) 10%;
 }
 
 .hero_section .gdc-greeting{
