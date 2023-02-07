@@ -104,6 +104,7 @@ a {
 .hero_section .gdc {
   font-size: 60px;
   font-weight: 900;
+  -webkit-background-clip: text;
   background-clip: text;
   background-image: url("../img/headerbg.jpeg");
   background-position: center left;
