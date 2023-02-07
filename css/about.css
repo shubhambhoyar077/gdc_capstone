@@ -25,6 +25,11 @@
     background-color: white;
 }
 /* -------Logo section-------- */
+.logo-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .logo-info .container{
     padding: 7% 0;
     text-align: center;
@@ -40,10 +45,16 @@
     border: 3px solid var(--gray-color);
 }
 
-.logo-info hr{
+.logo-info .divider{
+    width: 100%;
     color: var(--gray-color);
 }
 /* ------Past conference------- */
+.past-gdc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .past-gdc .container{
     display: flex;
     flex-direction: column;
