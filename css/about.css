@@ -3,7 +3,7 @@
 
 /* -----hero section---- */
 .hero_section{
-    height: 100vh;
+    height: 80vh;
 }
 .hero_section .container{
     text-align: center;
@@ -48,6 +48,13 @@
     text-align: center;
     padding: 7% 0;
 
+}
+.past-gdc .gdc-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .past-gdc .GDC-2022,
 .past-gdc .GDC-2021{
