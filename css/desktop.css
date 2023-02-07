@@ -1,5 +1,5 @@
 @media all and (min-width: 768px){
-    #toggle-mobile-menu{
+    #toggle-mobile-menu, .mobile-menu{
         display: none;
     }
     .desktop-menu{
