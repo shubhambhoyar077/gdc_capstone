@@ -106,4 +106,16 @@
         grid-template-columns: auto auto auto auto auto;
         gap: 0.5%;
     }
+    /* ----about page---- */
+    /* ----past GDC---- */
+    .past-gdc .gdc-container{
+        flex-direction: row;
+        /* justify-content: space-between; */
+        width: 1100px;
+    }
+    .past-gdc .GDC-2022,
+    .past-gdc .GDC-2021{
+        margin: 5% 2%;
+        /* width: 500px; */
+    }
 }
