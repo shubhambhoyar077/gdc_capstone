@@ -89,6 +89,10 @@
         color: white;
         border-bottom: 1px solid white;
     }
+    /* ----Feature Speaker---- */
+    .featured_speakers .container{
+        grid-template-columns: auto auto;
+    }
 }
 
 @media all and (min-width: 1340px){
