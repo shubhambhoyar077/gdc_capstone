@@ -165,7 +165,7 @@ a{
     
 }
 .main_program .program_info{
-    width: 60%;
+    width: calc(60% - 3em);
 }
 
 .main_program .register_btn{
