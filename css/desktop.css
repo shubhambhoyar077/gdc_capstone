@@ -90,7 +90,7 @@
   }
 
   .main_program .container {
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto auto auto auto;
     gap: 2%;
   }
 
