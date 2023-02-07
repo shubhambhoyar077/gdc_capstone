@@ -1,124 +1,153 @@
-@media all and (min-width: 768px){
-    #toggle-mobile-menu, .mobile-menu{
-        display: none;
-    }
-    .desktop-menu{
-        display: block;
-    }
-    /* ---top menu--- */
-    .desktop-menu .top-menu{
-        background-color: var(--black-color);
-        display: flex;
-        justify-content: center;
-    }
-    .desktop-menu .top{
-        display: flex;
-        justify-content: end;
-        padding: 5px 0;
-        width: 1100px;
-    }
-    .desktop-menu .top .page-link{
-        color: white;
-        padding-left: 24px;
-        font-size: 18px;
-    }
-    /* ---bottom menu--- */
-    .desktop-menu .bottom-menu{
-        background-color: white;
-        display: flex;
-        justify-content: center;
-    }
-    .desktop-menu .bottom{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 12px 0;
-        width: 1100px;
-    }
-    .desktop-menu .bottom .main-logo{
-        width: 50%;
-    }
-    .desktop-menu .bottom .main-links{
-        display: flex;
-    }
-    .desktop-menu .bottom .page-link{
-        padding-right: 24px;
-        color: var(--black-color);
-    }
-    .desktop-menu .bottom .page-link:hover{
-        color: var(--orange-color);
-    }
-    .desktop-menu .bottom .register-btn{
-        color: var(--orange-color);
-        border: 5px solid var(--orange-color);
-        padding: 10%;
-        transition: color,background-color 1s;
-    }
-    .desktop-menu .bottom .register-btn:hover{
-        color: white;
-        background-color: var(--orange-color);
-    }
-    /* ----hero section---- */
-    .hero_section{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .hero_section .gdc-msg{
-        width: 60%;
-    }
-    /* ----main program---- */
-    .main_program{
-        height: auto;
-        padding: 3% 0 5% 0;
-    }
-    .main_program .container{
-        grid-template-columns: auto auto;
-        gap: 2%;
-    }
-    .main_program .program_card{
-        flex-direction: column;
-        text-align: center;
-    }
-    .main_program .register_btn{
-        display: none;
-    }
-    .main_program .see-program{
-        padding-top: 5%;
-        display: block;
-        color: white;
-        border-bottom: 1px solid white;
-    }
-    .main_program .program_info{
-        width: 60%;
-    }
-    /* ----Feature Speaker---- */
-    .featured_speakers .container{
-        grid-template-columns: auto auto;
-    }
+@media all and (min-width: 768px) {
+  #toggle-mobile-menu,
+  .mobile-menu {
+    display: none;
+  }
+
+  .desktop-menu {
+    display: block;
+  }
+
+  /* ---top menu--- */
+  .desktop-menu .top-menu {
+    background-color: var(--black-color);
+    display: flex;
+    justify-content: center;
+  }
+
+  .desktop-menu .top {
+    display: flex;
+    justify-content: end;
+    padding: 5px 0;
+    width: 1100px;
+  }
+
+  .desktop-menu .top .page-link {
+    color: white;
+    padding-left: 24px;
+    font-size: 18px;
+  }
+
+  /* ---bottom menu--- */
+  .desktop-menu .bottom-menu {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+  }
+
+  .desktop-menu .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    width: 1100px;
+  }
+
+  .desktop-menu .bottom .main-logo {
+    width: 50%;
+  }
+
+  .desktop-menu .bottom .main-links {
+    display: flex;
+  }
+
+  .desktop-menu .bottom .page-link {
+    padding-right: 24px;
+    color: var(--black-color);
+  }
+
+  .desktop-menu .bottom .page-link:hover {
+    color: var(--orange-color);
+  }
+
+  .desktop-menu .bottom .register-btn {
+    color: var(--orange-color);
+    border: 5px solid var(--orange-color);
+    padding: 10%;
+    transition: color, background-color 1s;
+  }
+
+  .desktop-menu .bottom .register-btn:hover {
+    color: white;
+    background-color: var(--orange-color);
+  }
+
+  /* ----hero section---- */
+  .hero_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero_section .gdc-msg {
+    width: 60%;
+  }
+
+  /* ----main program---- */
+  .main_program {
+    height: auto;
+    padding: 3% 0 5% 0;
+  }
+
+  .main_program .container {
+    grid-template-columns: auto auto;
+    gap: 2%;
+  }
+
+  .main_program .program_card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .main_program .register_btn {
+    display: none;
+  }
+
+  .main_program .see-program {
+    padding-top: 5%;
+    display: block;
+    color: white;
+    border-bottom: 1px solid white;
+  }
+
+  .main_program .program_info {
+    width: 60%;
+  }
+
+  /* ----Feature Speaker---- */
+  .featured_speakers .container {
+    grid-template-columns: auto auto;
+  }
 }
 
-@media all and (min-width: 1340px){
-    .hero_section .container{
-        width: 100%;
-    }
-    .hero_section .gdc{
-        width: 80%;
-    }
-    .main_program .container{
-        grid-template-columns: auto auto auto auto auto;
-        gap: 0.5%;
-    }
-    /* ----about page---- */
-    /* ----past GDC---- */
-    .past-gdc .gdc-container{
-        flex-direction: row;
-        /* justify-content: space-between; */
-        width: 1100px;
-    }
-    .past-gdc .GDC-2022,
-    .past-gdc .GDC-2021{
-        margin: 5% 2%;
-        /* width: 500px; */
-    }
+@media all and (min-width: 1340px) {
+  .hero_section .container {
+    width: 100%;
+  }
+
+  .hero_section .gdc {
+    width: 80%;
+  }
+
+  .main_program .container {
+    grid-template-columns: auto auto auto auto auto;
+    gap: 0.5%;
+  }
+
+  /* ----about page---- */
+
+  /* ----past GDC---- */
+  .past-gdc .gdc-container {
+    flex-direction: row;
+
+    /* justify-content: space-between; */
+    width: 1100px;
+  }
+
+  .past-gdc .GDC-2022,
+  .past-gdc .GDC-2021 {
+    margin: 5% 2%;
+
+    /* width: 500px; */
+  }
 }

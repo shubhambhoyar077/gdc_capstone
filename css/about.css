@@ -2,115 +2,125 @@
 
 
 /* -----hero section---- */
-.hero_section{
-    height: 100vh;
-}
-.hero_section .container{
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.hero_section {
+  height: 100vh;
 }
 
-.hero_section .gdc-email{
-    border-bottom: 1px solid var(--black-color);
+.hero_section .container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.hero_section .gdc-contact{
-    margin: 5% 0;
+.hero_section .gdc-email {
+  border-bottom: 1px solid var(--black-color);
 }
 
-.hero_section .gdc-msg{
-    border: 3px solid var(--gray-color);
-    background-color: white;
+.hero_section .gdc-contact {
+  margin: 5% 0;
 }
+
+.hero_section .gdc-msg {
+  border: 3px solid var(--gray-color);
+  background-color: white;
+}
+
 /* -------Logo section-------- */
-.logo-info{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.logo-info .container{
-    padding: 7% 0;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.logo-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.logo-info .gdc-logo-2023{
-    width: 90%;
-    margin: 24px 0;
-    padding: 5%;
-    border: 3px solid var(--gray-color);
+.logo-info .container {
+  padding: 7% 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.logo-info .divider{
-    width: 100%;
-    color: var(--gray-color);
+.logo-info .gdc-logo-2023 {
+  width: 90%;
+  margin: 24px 0;
+  padding: 5%;
+  border: 3px solid var(--gray-color);
 }
+
+.logo-info .divider {
+  width: 100%;
+  color: var(--gray-color);
+}
+
 /* ------Past conference------- */
-.past-gdc{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.past-gdc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.past-gdc .container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 7% 0;
 
+.past-gdc .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 7% 0;
 }
-.past-gdc .gdc-container{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
+.past-gdc .gdc-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
 .past-gdc .GDC-2022,
-.past-gdc .GDC-2021{
-    background-image: url("../img/gdc_2022.png");
-    width: 100%;
-    max-width: 500px;
-    height: 300px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
-    isolation: isolate;
-    color: white;
-    margin: 5% 0;
+.past-gdc .GDC-2021 {
+  background-image: url("../img/gdc_2022.png");
+  width: 100%;
+  max-width: 500px;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  isolation: isolate;
+  color: white;
+  margin: 5% 0;
 }
-.past-gdc .GDC-2021{
-    background-image: url("../img/gdc_2021.png");
+
+.past-gdc .GDC-2021 {
+  background-image: url("../img/gdc_2021.png");
 }
-.past-gdc .past-info{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    transition: opacity 1s;
+
+.past-gdc .past-info {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: opacity 1s;
 }
+
 .past-gdc .GDC-2022::after,
-.past-gdc .GDC-2021::after{
-    content: '';
-    position: absolute;
-    inset: 0;
-    /* height: 280px; */
-    z-index: -1;
-    background-color: rgba(236, 82, 66, 0.5);
-    transition: opacity 1s;
+.past-gdc .GDC-2021::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+
+  /* height: 280px; */
+  z-index: -1;
+  background-color: rgba(236, 82, 66, 0.5);
+  transition: opacity 1s;
 }
 
-.past-gdc .GDC-2022:hover::after, .past-gdc .past-info:hover,
-.past-gdc .GDC-2021:hover::after{
-    opacity: 0;
+.past-gdc .GDC-2022:hover::after,
+.past-gdc .past-info:hover,
+.past-gdc .GDC-2021:hover::after {
+  opacity: 0;
 }
-
