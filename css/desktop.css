@@ -8,12 +8,14 @@
     /* ---top menu--- */
     .desktop-menu .top-menu{
         background-color: var(--black-color);
-        
+        display: flex;
+        justify-content: center;
     }
     .desktop-menu .top{
         display: flex;
         justify-content: end;
         padding: 5px 0;
+        width: 1100px;
     }
     .desktop-menu .top .page-link{
         color: white;
@@ -23,12 +25,15 @@
     /* ---bottom menu--- */
     .desktop-menu .bottom-menu{
         background-color: white;
+        display: flex;
+        justify-content: center;
     }
     .desktop-menu .bottom{
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 12px 0;
+        width: 1100px;
     }
     .desktop-menu .bottom .main-logo{
         width: 50%;
