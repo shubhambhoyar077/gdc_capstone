@@ -121,7 +121,7 @@
 
   .past-gdc .gdc-container {
     flex-direction: row;
-    width: calc(768px - 2%);
+    width: calc(768px - 15%);
   }
 
   .past-gdc .GDC-2022,

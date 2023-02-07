@@ -125,14 +125,16 @@
 }
 
 @media all and (min-width: 768px) {
-    .partner{
-        display: none;
-    }
-    .footer_info{
-        color: white;
-        background-color: var(--black-color);
-    }
-    .footer_info .footer_logo{
-        filter: invert(100%);
-    }
+  .partner {
+    display: none;
+  }
+
+  .footer_info {
+    color: white;
+    background-color: var(--black-color);
+  }
+
+  .footer_info .footer_logo {
+    filter: invert(100%);
+  }
 }
