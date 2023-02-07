@@ -53,8 +53,48 @@
         color: white;
         background-color: var(--orange-color);
     }
+    /* ----hero section---- */
+    .hero_section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero_section .gdc-msg{
+        width: 60%;
+    }
+    /* ----main program---- */
+    .main_program{
+        height: auto;
+        padding: 3% 0 5% 0;
+    }
+    .main_program .container{
+        grid-template-columns: auto auto;
+        gap: 2%;
+    }
+    .main_program .program_card{
+        flex-direction: column;
+        text-align: center;
+    }
+    .main_program .register_btn{
+        display: none;
+    }
+    .main_program .see-program{
+        padding-top: 5%;
+        display: block;
+        color: white;
+        border-bottom: 1px solid white;
+    }
 }
 
 @media all and (min-width: 1340px){
-
+    .hero_section .container{
+        width: 100%;
+    }
+    .hero_section .gdc{
+        width: 80%;
+    }
+    .main_program .container{
+        grid-template-columns: auto auto auto auto auto;
+        gap: 0.5%;
+    }
 }
