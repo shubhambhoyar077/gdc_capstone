@@ -197,6 +197,7 @@ a{
     height: 20vh;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .footer_info .container{
     display: flex;
