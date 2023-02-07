@@ -29,6 +29,9 @@ a{
     cursor: pointer;
 }
 /* -------Mobile Menu-------------- */
+.desktop-menu{
+    display: none;
+}
 .menu .mobile-menu{
     position: absolute;
     height: 100vh;

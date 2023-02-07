@@ -1,8 +1,9 @@
-@import "about.css";
-
 @media all and (min-width: 768px){
     #toggle-mobile-menu{
         display: none;
+    }
+    .desktop-menu{
+        display: block;
     }
     /* ---top menu--- */
     .desktop-menu .top-menu{
