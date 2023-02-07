@@ -35,7 +35,7 @@
 # 📖 [Game Developer Conference] <a name="about-project"></a>
 
 **[GDC]** is a first capstone by Microverse. Topic for this project is Game Developer 
-conference 2023.
+conference 2023. Check my [Project presentation](https://drive.google.com/file/d/1wQ7dPiQZKHEvNE76p5My9gJy7k5pXXGP/view?usp=sharing)
 
 ## 🛠 Built With <a name="built-with"></a>
 
