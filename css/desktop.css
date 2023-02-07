@@ -1,0 +1,27 @@
+@import "about.css";
+
+@media all and (min-width: 768px){
+    #toggle-mobile-menu{
+        display: none;
+    }
+    /* ---top menu--- */
+    .desktop-menu .top-menu{
+        background-color: var(--black-color);
+        
+    }
+    .desktop-menu .top{
+        display: flex;
+        justify-content: end;
+        padding: 5px 0;
+    }
+    .desktop-menu .top .page-link{
+        color: white;
+        padding-left: 24px;
+        font-size: 18px;
+    }
+    /* ---bottom menu--- */
+}
+
+@media all and (min-width: 1340px){
+
+}
