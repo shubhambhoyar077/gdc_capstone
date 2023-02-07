@@ -118,10 +118,12 @@
   .featured_speakers .container {
     grid-template-columns: auto auto;
   }
+
   .past-gdc .gdc-container {
     flex-direction: row;
     width: calc(768px - 2%);
   }
+
   .past-gdc .GDC-2022,
   .past-gdc .GDC-2021 {
     margin: 5% 2%;
