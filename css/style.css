@@ -190,6 +190,7 @@ a{
     width: 40%;
     margin: 0 2%;
     filter: invert(70%) saturate(4%);
+    max-width: 230px;
 }
 /* --------Footer--------- */
 .footer_info{
