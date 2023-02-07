@@ -106,7 +106,7 @@ a {
   font-weight: 900;
   background-clip: text;
   background-image: url("../img/headerbg.jpeg");
-  background-image: center left;
+  background-position: center left;
   color: transparent;
 }
 
