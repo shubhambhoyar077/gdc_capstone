@@ -48,7 +48,7 @@
 }
 
 .logo-info .divider {
-  width: 100%;
+  width: calc(100% - 2px);
   color: var(--gray-color);
 }
 
