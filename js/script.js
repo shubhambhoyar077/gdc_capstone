@@ -54,7 +54,7 @@ const speakers = {
 //                     </div>`;
 //   });
 // }
-
+if(speakerContainer){
 function createSpeaker(speaker){
   speakerContainer.innerHTML += `
                     <div class="speaker">
@@ -130,8 +130,8 @@ moreBtn.addEventListener('click', () => {
     moreBtn.innerHTML = `MORE <i class="fa fa-arrow-down">`;
   }
 });
-
-console.log(speakerContainer);
+}
+// Menu button
 const openmenubtn = document.querySelector('#toggle-mobile-menu');
 const closemenubtn = document.querySelector('#close-menu');
 const mobilemenu = document.querySelector('.mobile-menu');

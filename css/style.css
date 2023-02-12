@@ -89,10 +89,14 @@ a {
   padding: 5% 0;
 }
 
-.hero_section .toggle-mobile-menu {
+#toggle-mobile-menu {
   color: var(--black-color);
   font-size: 30px;
   margin: var(--common-padding) 10%;
+}
+
+#toggle-mobile-menu:hover{
+  color: var(--orange-color);
 }
 
 .hero_section .gdc-greeting {
