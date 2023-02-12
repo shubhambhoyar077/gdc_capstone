@@ -290,3 +290,15 @@ a {
 .featured_speakers .speaker_info .custome_border {
   color: var(--gray-color);
 }
+
+#more-speakers-btn{
+  width : 100%;
+  font-size: 30px;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#more-speakers-btn:hover{
+  color: #ec5242;
+}

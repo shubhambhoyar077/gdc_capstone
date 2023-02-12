@@ -1,4 +1,5 @@
 const speakerContainer = document.querySelector('.featured_speakers .container');
+const moreBtn = document.querySelector('#more-speakers-btn');
 
 const speakers = {
   speaker1: {
@@ -39,9 +40,23 @@ const speakers = {
   },
 };
 
-if (speakerContainer) {
-  Object.keys(speakers).forEach((speaker) => {
-    speakerContainer.innerHTML += `
+// if (speakerContainer) {
+//   Object.keys(speakers).forEach((speaker) => {
+//     speakerContainer.innerHTML += `
+//                     <div class="speaker">
+//                     <img class="speaker_img" src=${speakers[speaker].imgurl} alt="">
+//                     <div class="speaker_info">
+//                         <h4 class="speaker_name">${speakers[speaker].name}</h4>
+//                         <h5 class="speaker_title">${speakers[speaker].title}</h5>
+//                         <hr class="custome_border">
+//                         <p class="speaker_des">${speakers[speaker].description}</p>
+//                     </div>
+//                     </div>`;
+//   });
+// }
+
+function createSpeaker(speaker){
+  speakerContainer.innerHTML += `
                     <div class="speaker">
                     <img class="speaker_img" src=${speakers[speaker].imgurl} alt="">
                     <div class="speaker_info">
@@ -51,9 +66,72 @@ if (speakerContainer) {
                         <p class="speaker_des">${speakers[speaker].description}</p>
                     </div>
                     </div>`;
+}
+
+let openmore = true;
+
+function openAll(speakerKeys){
+  speakerKeys.forEach((speaker) => {
+    createSpeaker(speaker)
   });
 }
 
+function openTwo(speakerKeys){
+  speakerKeys.forEach((speaker) => {
+    createSpeaker(speaker)
+  });
+}
+
+
+
+if(window.innerWidth >767){
+  speakerContainer.innerHTML = '';
+  openAll(Object.keys(speakers));
+  moreBtn.style.display = "none";
+}
+else{
+  speakerContainer.innerHTML = '';
+  openTwo(Object.keys(speakers).slice(0,2));
+  moreBtn.style.display = "block";
+  moreBtn.innerHTML = `MORE <i class="fa fa-arrow-down">`;
+}
+
+window.addEventListener('resize', () => {
+  let nextScreen = (window.innerWidth >767 ? "desktop":"mobile");
+  speakerContainer.innerHTML = '';
+  if(nextScreen === "desktop"){
+    openAll(Object.keys(speakers));
+    moreBtn.style.display = "none";
+  }
+  if(nextScreen === "mobile"){
+    moreBtn.style.display = "block";
+    if(!openmore){
+      openAll(Object.keys(speakers));
+      moreBtn.innerHTML = `LESS <i class="fa fa-arrow-up">`;
+    }
+    else{
+      openTwo(Object.keys(speakers).slice(0,2));
+      moreBtn.innerHTML = `MORE <i class="fa fa-arrow-down">`;
+    }
+  }
+});
+
+moreBtn.addEventListener('click', () => {
+  if(openmore){
+    speakerContainer.innerHTML = '';
+    openAll(Object.keys(speakers));
+    openmore = false;
+    moreBtn.innerHTML = `LESS <i class="fa fa-arrow-up">`;
+  }
+  else{
+    speakerContainer.innerHTML = '';
+    openTwo(Object.keys(speakers).slice(0,2));
+    openmore = true;
+    moreBtn.innerHTML = `MORE <i class="fa fa-arrow-down">`;
+  }
+});
+
+console.log(speakerContainer);
 const openmenubtn = document.querySelector('#toggle-mobile-menu');
 const closemenubtn = document.querySelector('#close-menu');
 const mobilemenu = document.querySelector('.mobile-menu');
