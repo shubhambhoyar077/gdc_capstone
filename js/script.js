@@ -54,9 +54,9 @@ const speakers = {
 //                     </div>`;
 //   });
 // }
-if(speakerContainer){
-function createSpeaker(speaker){
-  speakerContainer.innerHTML += `
+if (speakerContainer) {
+  const createSpeaker = (speaker) => {
+    speakerContainer.innerHTML += `
                     <div class="speaker">
                     <img class="speaker_img" src=${speakers[speaker].imgurl} alt="">
                     <div class="speaker_info">
@@ -66,70 +66,65 @@ function createSpeaker(speaker){
                         <p class="speaker_des">${speakers[speaker].description}</p>
                     </div>
                     </div>`;
-}
+  };
 
-let openmore = true;
+  let openmore = true;
 
-function openAll(speakerKeys){
-  speakerKeys.forEach((speaker) => {
-    createSpeaker(speaker)
-  });
-}
+  const openAll = (speakerKeys) => {
+    speakerKeys.forEach((speaker) => {
+      createSpeaker(speaker);
+    });
+  };
 
-function openTwo(speakerKeys){
-  speakerKeys.forEach((speaker) => {
-    createSpeaker(speaker)
-  });
-}
+  const openTwo = (speakerKeys) => {
+    speakerKeys.forEach((speaker) => {
+      createSpeaker(speaker);
+    });
+  };
 
-
-
-if(window.innerWidth >767){
-  speakerContainer.innerHTML = '';
-  openAll(Object.keys(speakers));
-  moreBtn.style.display = "none";
-}
-else{
-  speakerContainer.innerHTML = '';
-  openTwo(Object.keys(speakers).slice(0,2));
-  moreBtn.style.display = "block";
-  moreBtn.innerHTML = `MORE <i class="fa fa-arrow-down">`;
-}
-
-window.addEventListener('resize', () => {
-  let nextScreen = (window.innerWidth >767 ? "desktop":"mobile");
-  speakerContainer.innerHTML = '';
-  if(nextScreen === "desktop"){
+  if (window.innerWidth > 767) {
+    speakerContainer.innerHTML = '';
     openAll(Object.keys(speakers));
-    moreBtn.style.display = "none";
+    moreBtn.style.display = 'none';
+  } else {
+    speakerContainer.innerHTML = '';
+    openTwo(Object.keys(speakers).slice(0, 2));
+    moreBtn.style.display = 'block';
+    moreBtn.innerHTML = 'MORE <i class="fa fa-arrow-down">';
   }
-  if(nextScreen === "mobile"){
-    moreBtn.style.display = "block";
-    if(!openmore){
+
+  window.addEventListener('resize', () => {
+    const nextScreen = (window.innerWidth > 767 ? 'desktop' : 'mobile');
+    speakerContainer.innerHTML = '';
+    if (nextScreen === 'desktop') {
       openAll(Object.keys(speakers));
-      moreBtn.innerHTML = `LESS <i class="fa fa-arrow-up">`;
+      moreBtn.style.display = 'none';
     }
-    else{
-      openTwo(Object.keys(speakers).slice(0,2));
-      moreBtn.innerHTML = `MORE <i class="fa fa-arrow-down">`;
+    if (nextScreen === 'mobile') {
+      moreBtn.style.display = 'block';
+      if (!openmore) {
+        openAll(Object.keys(speakers));
+        moreBtn.innerHTML = 'LESS <i class="fa fa-arrow-up">';
+      } else {
+        openTwo(Object.keys(speakers).slice(0, 2));
+        moreBtn.innerHTML = 'MORE <i class="fa fa-arrow-down">';
+      }
     }
-  }
-});
+  });
 
-moreBtn.addEventListener('click', () => {
-  if(openmore){
-    speakerContainer.innerHTML = '';
-    openAll(Object.keys(speakers));
-    openmore = false;
-    moreBtn.innerHTML = `LESS <i class="fa fa-arrow-up">`;
-  }
-  else{
-    speakerContainer.innerHTML = '';
-    openTwo(Object.keys(speakers).slice(0,2));
-    openmore = true;
-    moreBtn.innerHTML = `MORE <i class="fa fa-arrow-down">`;
-  }
-});
+  moreBtn.addEventListener('click', () => {
+    if (openmore) {
+      speakerContainer.innerHTML = '';
+      openAll(Object.keys(speakers));
+      openmore = false;
+      moreBtn.innerHTML = 'LESS <i class="fa fa-arrow-up">';
+    } else {
+      speakerContainer.innerHTML = '';
+      openTwo(Object.keys(speakers).slice(0, 2));
+      openmore = true;
+      moreBtn.innerHTML = 'MORE <i class="fa fa-arrow-down">';
+    }
+  });
 }
 // Menu button
 const openmenubtn = document.querySelector('#toggle-mobile-menu');
