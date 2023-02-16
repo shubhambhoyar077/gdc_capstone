@@ -95,7 +95,7 @@ a {
   margin: var(--common-padding) 10%;
 }
 
-#toggle-mobile-menu:hover{
+#toggle-mobile-menu:hover {
   color: var(--orange-color);
 }
 
@@ -295,14 +295,14 @@ a {
   color: var(--gray-color);
 }
 
-#more-speakers-btn{
-  width : 100%;
+#more-speakers-btn {
+  width: 100%;
   font-size: 30px;
   background-color: white;
   border: none;
   cursor: pointer;
 }
 
-#more-speakers-btn:hover{
+#more-speakers-btn:hover {
   color: #ec5242;
 }
