@@ -39,21 +39,6 @@ const speakers = {
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, il!',
   },
 };
-
-// if (speakerContainer) {
-//   Object.keys(speakers).forEach((speaker) => {
-//     speakerContainer.innerHTML += `
-//                     <div class="speaker">
-//                     <img class="speaker_img" src=${speakers[speaker].imgurl} alt="">
-//                     <div class="speaker_info">
-//                         <h4 class="speaker_name">${speakers[speaker].name}</h4>
-//                         <h5 class="speaker_title">${speakers[speaker].title}</h5>
-//                         <hr class="custome_border">
-//                         <p class="speaker_des">${speakers[speaker].description}</p>
-//                     </div>
-//                     </div>`;
-//   });
-// }
 if (speakerContainer) {
   const createSpeaker = (speaker) => {
     speakerContainer.innerHTML += `
