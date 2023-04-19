@@ -43,7 +43,7 @@ if (speakerContainer) {
   const createSpeaker = (speaker) => {
     speakerContainer.innerHTML += `
                     <div class="speaker">
-                    <img class="speaker_img" src=${speakers[speaker].imgurl} alt="">
+                    <img class="speaker_img" src=${speakers[speaker].imgurl} alt="speaker">
                     <div class="speaker_info">
                         <h4 class="speaker_name">${speakers[speaker].name}</h4>
                         <h5 class="speaker_title">${speakers[speaker].title}</h5>
